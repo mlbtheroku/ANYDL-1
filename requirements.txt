@@ -10,3 +10,5 @@ tgcrypto
 yt-dlp
 olefile
 speedtest-cli
+youtube-dl
+moviepy
