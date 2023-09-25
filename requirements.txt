@@ -3,7 +3,7 @@ beautifulsoup4
 hachoir
 numpy
 Pillow
-Pyrogram==1.4.16
+Pyrogram
 requests
 psutil
 tgcrypto
